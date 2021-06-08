@@ -128,7 +128,7 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\account:account-apis-config">
-        <salesforce:query-all doc:name="Query all" doc:id="26a88a07-0999-424d-a229-ebb79c797691" config-ref="Salesforce_Config">
+        <salesforce:query-all doc:name="Query Accounts" doc:id="26a88a07-0999-424d-a229-ebb79c797691" config-ref="Salesforce_Config">
 			<salesforce:salesforce-query ><![CDATA[Select name, id from Account]]></salesforce:salesforce-query>
 		</salesforce:query-all>
 		<ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
